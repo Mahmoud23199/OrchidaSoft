@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+  @*   <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+
+    @{
+        ViewData["Title"] = "Upload Excel Sheet";
+    }
+
+    <img src="https://orchida-soft.com/mainsite/wp-content/uploads/2022/10/Logo-ai.png" alt="OrchidaSoft" />
+    <h2 class="mt-5">Upload Excel Sheet</h2>
+
+    <form enctype="multipart/form-data" method="post"  asp-action="Upload">
+        <input type="file" name="file" accept=".xlsx"  required />
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+
+
+</div>
